@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Kirinyaga Coffee Data
+data = {
+'Year': [2020,2021,2022,2023,2024],
+'Rainfall_mm': [1200,1450,1100,1600,1300],
+'Coffee_tons': [45,52,40,58,48]
+}
+df = pd.DataFrame(data)
+print(df)
+print("Correlation:", df['Rainfall_mm'].corr(df['Coffee_tons']))
